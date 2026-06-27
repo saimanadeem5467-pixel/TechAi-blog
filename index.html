@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechAI Blog</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+ 
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-robot logo-icon"></i>
+        <span><strong>TechAI</strong> Blog</span>
+      </a>
+ 
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Programming</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+ 
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles..." />
+          <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <a href="write.html" class="btn btn-primary">Write a Post</a>
+        <div class="user-avatar">
+          <img src="https://i.pravatar.cc/36?img=12" alt="User" />
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-layout container">
+ 
+    <!-- ===== LEFT: ARTICLES AREA ===== -->
+    <section class="content-area">
+ 
+      <!-- FEATURED HERO -->
+      <article class="hero-card" id="featuredPost">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=80" alt="AI Robot" />
+          <span class="badge">FEATURED</span>
+        </div>
+        <div class="hero-body">
+          <h1 class="hero-title">The Future of AI: Trends That Will Shape 2025 and Beyond</h1>
+          <p class="hero-excerpt">Explore the most important AI trends that are transforming industries and shaping our future.</p>
+          <div class="meta">
+            <img src="https://i.pravatar.cc/32?img=5" alt="Sarah Johnson" class="author-avatar" />
+            <div>
+              <span class="author-name">Sarah Johnson</span>
+              <span class="meta-divider">·</span>
+              <span class="meta-date">May 26, 2025</span>
+              <span class="meta-divider">·</span>
+              <span class="read-time">5 min read</span>
+            </div>
+          </div>
+          <a href="post.html" class="btn btn-outline">Read More</a>
+        </div>
+      </article>
+ 
+      <!-- LATEST ARTICLES -->
+      <section class="latest-section">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="articles-grid" id="articlesGrid">
+ 
+          <!-- Card 1 -->
+          <article class="card" data-category="ai">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80" alt="AI Tools" />
+            </div>
+            <div class="card-body">
+              <span class="category-label ai">Artificial Intelligence</span>
+              <h3 class="card-title"><a href="post.html">Top 10 AI Tools Every Developer Should Know in 2025</a></h3>
+              <p class="card-excerpt">Discover the must-have AI tools that can boost your productivity and code quality.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=8" alt="Mike Chen" />
+                <span>Mike Chen</span>
+                <span class="meta-divider">·</span>
+                <span>May 25, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card 2 -->
+          <article class="card" data-category="web">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Web Dev" />
+            </div>
+            <div class="card-body">
+              <span class="category-label web">Web Development</span>
+              <h3 class="card-title"><a href="post.html">React 19: New Features and Everything You Need to Know</a></h3>
+              <p class="card-excerpt">A deep dive into React 19's latest features and how they improve development.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=9" alt="Emma Davis" />
+                <span>Emma Davis</span>
+                <span class="meta-divider">·</span>
+                <span>May 24, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card 3 -->
+          <article class="card" data-category="cloud">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80" alt="Cloud" />
+            </div>
+            <div class="card-body">
+              <span class="category-label cloud">Cloud Computing</span>
+              <h3 class="card-title"><a href="post.html">Cloud Computing Trends to Watch in 2025</a></h3>
+              <p class="card-excerpt">The cloud is evolving fast. Here are the top trends to keep an eye on this year.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=11" alt="James Wilson" />
+                <span>James Wilson</span>
+                <span class="meta-divider">·</span>
+                <span>May 23, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card 4 -->
+          <article class="card" data-category="ml">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&q=80" alt="Machine Learning" />
+            </div>
+            <div class="card-body">
+              <span class="category-label ml">Machine Learning</span>
+              <h3 class="card-title"><a href="post.html">Beginner's Guide to Neural Networks in Python</a></h3>
+              <p class="card-excerpt">Start your journey into deep learning with this step-by-step tutorial using Python.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=15" alt="Anna Park" />
+                <span>Anna Park</span>
+                <span class="meta-divider">·</span>
+                <span>May 22, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card 5 -->
+          <article class="card" data-category="programming">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&q=80" alt="Programming" />
+            </div>
+            <div class="card-body">
+              <span class="category-label prog">Programming</span>
+              <h3 class="card-title"><a href="post.html">TypeScript 5.5: What's New and Why It Matters</a></h3>
+              <p class="card-excerpt">Explore the latest TypeScript release and how its new features clean up your codebase.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=20" alt="Ryan Lee" />
+                <span>Ryan Lee</span>
+                <span class="meta-divider">·</span>
+                <span>May 21, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card 6 -->
+          <article class="card" data-category="ai">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1675557009283-c9e6d5b1bca4?w=600&q=80" alt="ChatGPT" />
+            </div>
+            <div class="card-body">
+              <span class="category-label ai">Artificial Intelligence</span>
+              <h3 class="card-title"><a href="post.html">How to Use GPT-4 API to Build Real Applications</a></h3>
+              <p class="card-excerpt">A practical guide to integrating OpenAI's API into your web and mobile apps.</p>
+              <div class="card-meta">
+                <img src="https://i.pravatar.cc/28?img=25" alt="Lisa Brown" />
+                <span>Lisa Brown</span>
+                <span class="meta-divider">·</span>
+                <span>May 20, 2025</span>
+                <span class="meta-divider">·</span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </article>
+ 
+        </div><!-- /articles-grid -->
+ 
+        <div class="view-all-wrap">
+          <button class="btn btn-outline-blue" id="loadMoreBtn">View All Articles</button>
+        </div>
+      </section>
+ 
+    </section><!-- /content-area -->
+ 
+    <!-- ===== RIGHT: SIDEBAR ===== -->
+    <aside class="sidebar">
+ 
+      <!-- About Widget -->
+      <div class="widget">
+        <h3 class="widget-title">About TechAI Blog</h3>
+        <p class="widget-text">Your go-to source for the latest in technology, artificial intelligence, and programming. We share insights, tutorials, and news to keep you ahead in the tech world.</p>
+        <a href="about.html" class="widget-link">Learn more about us →</a>
+      </div>
+ 
+      <!-- Categories Widget -->
+      <div class="widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="category-list" id="categoryFilter">
+          <li><a href="#" data-filter="all" class="cat-link active">All Posts</a><span class="cat-count">89</span></li>
+          <li><a href="#" data-filter="ai" class="cat-link">Artificial Intelligence</a><span class="cat-count">24</span></li>
+          <li><a href="#" data-filter="web" class="cat-link">Web Development</a><span class="cat-count">18</span></li>
+          <li><a href="#" data-filter="ml" class="cat-link">Machine Learning</a><span class="cat-count">15</span></li>
+          <li><a href="#" data-filter="cloud" class="cat-link">Cloud Computing</a><span class="cat-count">12</span></li>
+          <li><a href="#" data-filter="programming" class="cat-link">Programming</a><span class="cat-count">20</span></li>
+        </ul>
+        <a href="#" class="widget-link">View all categories →</a>
+      </div>
+ 
+      <!-- Popular Posts Widget -->
+      <div class="widget">
+        <h3 class="widget-title">Popular Posts</h3>
+        <ul class="popular-list">
+          <li class="popular-item">
+            <img src="https://images.unsplash.com/photo-1672409090521-d0b04b9aa23c?w=80&q=80" alt="ChatGPT" />
+            <div>
+              <a href="post.html" class="popular-title">How ChatGPT is Revolutionizing Software Development</a>
+              <span class="popular-date">May 20, 2025</span>
+            </div>
+          </li>
+          <li class="popular-item">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=80&q=80" alt="ML" />
+            <div>
+              <a href="post.html" class="popular-title">A Beginner's Guide to Machine Learning</a>
+              <span class="popular-date">May 18, 2025</span>
+            </div>
+          </li>
+          <li class="popular-item">
+            <img src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=80&q=80" alt="JS" />
+            <div>
+              <a href="post.html" class="popular-title">JavaScript ES2025: Top New Features</a>
+              <span class="popular-date">May 15, 2025</span>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="widget-link">View all popular posts →</a>
+      </div>
+ 
+    </aside><!-- /sidebar -->
+ 
+  </main>
+ 
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container newsletter-inner">
+      <div class="newsletter-icon"><i class="fas fa-envelope"></i></div>
+      <div class="newsletter-text">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest articles and updates.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2025 TechAI Blog. All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Search Modal -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-modal-inner">
+      <input type="text" id="modalSearch" placeholder="Search articles, categories..." autofocus />
+      <button id="closeSearch"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+ 
+  <script src="js/main.js"></script>
+</body>
+</html>
+ 
+  
